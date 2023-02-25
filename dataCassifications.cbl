@@ -1,12 +1,12 @@
        IDENTIFICATION DIVISION.
        program-id. data-classification.
-       
+
        ENVIRONMENT DIVISION.
-      *data classification 
+      *data classification
        configuration section.
        special-names.
            CLASS passingScore IS "A" thru "C", "D".
-     
+
        DATA DIVISION.
        FILE SECTION.
        working-storage section.
@@ -27,17 +27,18 @@
        PROCEDURE DIVISION.
        DISPLAY "enter age: " with no advancing 
        accept age
+
        IF age > 18 then
            display "You can vote."
        ELSE
            DISPLAY "you can't vote"
-       END-IF 
-       
+       END-IF
+
       *> = LES THAN
       *< = GREATER THAN
       *= = EQUAL TO
       *NOT EQUAL TO
-      *AND 
+      *AND
       *OR
 
        IF age IS LESS THAN 5 THEN 
@@ -53,13 +54,13 @@
        IF age greater than or equal to 18 then
            display "Go to collage"
        END-IF
-       
+
        IF score is passingScore then
            DISPLAY "YOU PASSED"
        ELSE
            DISPLAY "YOU FAILED"
        END-IF
-       
+
       * NUMERIC, ALPHABETIC ALPHABETIC-UPPER
        if score is not numeric then 
            display "is not a number"
@@ -71,7 +72,7 @@
            set cantVote to true
        end-if
        display "vote: " canVoteFlag
-       
+
        display "enter a single number or X to exit: "
        accept testNumber
        perform until not Anumber

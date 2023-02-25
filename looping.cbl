@@ -13,9 +13,9 @@
 
       *----WHILE LOOP
        perform outputData with test after until ind > 5
-       
+
       *----FOR LOOP
-       display "NOW THE FOR LOOP"    
+       display "NOW THE FOR LOOP"
        go to forLoop.
 
        outputData.
@@ -24,8 +24,7 @@
 
        forLoop.
            perform outputData2 varying ind from 1 by 1 until ind = 5
-       
        STOP RUN.
-       
+
        outputData2.
            display ind.

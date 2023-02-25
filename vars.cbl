@@ -5,7 +5,7 @@
         date-written. Junuary 31st 2023.
       *-----INFORMATION ABOUT THE COMPUTER THAT IS RUNING THE PROGRAM  
         ENVIRONMENT DIVISION.
-      *-----ITS ABOUT THE DATA (MADE OF 4 SECTIONS)      
+      *-----ITS ABOUT THE DATA (MADE OF 4 SECTIONS)
         DATA DIVISION.
         file section.
       *describes the data sent and receveid from the storage  

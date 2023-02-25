@@ -1,6 +1,6 @@
        IDENTIFICATION DIVISION.
        program-id. datatypes.
-       
+
        DATA DIVISION.
        FILE SECTION.
        working-storage section.
@@ -21,7 +21,7 @@
        01 num3 PIC 9 VALUE 3.
        01 answer PIC S99V99 VALUE 0.
        01 remainders PIC 9v99.
-       
+
        PROCEDURE DIVISION.
        ADD num1 TO num2 giving answer
        display "ANSWER: " answer
@@ -33,7 +33,7 @@
        display "ANSWER: " answer
        DIVIDE num1 INTO num2 giving answer remainder remainders
        display "remainders: "remainders 
-       
+
       *MULTIPLE VARIABLES
        ADD num1, num2 TO num3 GIVING answer
        display "answer: " answer
@@ -53,7 +53,5 @@
 
        compute answer ROUNDED = 3.0 + 2.004
        display "ANSWRE: " answer.
-       
-
 
        STOP RUN.
